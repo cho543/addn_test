@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65D81C5A25B0BE480070A50A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D81C5925B0BE480070A50A /* main.cpp */; };
+		65D81C6425B0D9B20070A50A /* binding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D81C6125B0D9B20070A50A /* binding.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,9 @@
 
 /* Begin PBXFileReference section */
 		65D81C5625B0BE480070A50A /* addon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = addon; sourceTree = BUILT_PRODUCTS_DIR; };
-		65D81C5925B0BE480070A50A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		65D81C6125B0D9B20070A50A /* binding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = binding.cpp; path = addon/binding.cpp; sourceTree = "<group>"; };
+		65D81C6225B0D9B20070A50A /* binding.gyp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = binding.gyp; path = addon/binding.gyp; sourceTree = "<group>"; };
+		65D81C6325B0D9B20070A50A /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = build; path = addon/build; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +43,9 @@
 		65D81C4D25B0BE480070A50A = {
 			isa = PBXGroup;
 			children = (
-				65D81C5825B0BE480070A50A /* addon */,
+				65D81C6125B0D9B20070A50A /* binding.cpp */,
+				65D81C6225B0D9B20070A50A /* binding.gyp */,
+				65D81C6325B0D9B20070A50A /* build */,
 				65D81C5725B0BE480070A50A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,14 +56,6 @@
 				65D81C5625B0BE480070A50A /* addon */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		65D81C5825B0BE480070A50A /* addon */ = {
-			isa = PBXGroup;
-			children = (
-				65D81C5925B0BE480070A50A /* main.cpp */,
-			);
-			path = addon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +114,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65D81C5A25B0BE480070A50A /* main.cpp in Sources */,
+				65D81C6425B0D9B20070A50A /* binding.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
